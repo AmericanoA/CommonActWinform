@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommonActWinform.Interface.IEnumerable;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace CommonActWinform
         public CommonAct()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var library = new Library();
+
+            var books = library.GetBooks();
+
+            if (books != null)
+            {
+                if (books.Any(x => x.출판사 == "명랑"))
+                {
+                    Console.WriteLine(books.First(x => x.출판사 == "명랑").이름);
+                }
+            }
         }
     }
 }

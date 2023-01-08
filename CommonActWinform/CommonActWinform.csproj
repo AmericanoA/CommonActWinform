@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\IEnumerable\Book.cs" />
+    <Compile Include="Interface\IEnumerable\Library.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,7 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interface\IDisposable\" />
-    <Folder Include="Interface\IEnumerable\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
