@@ -1,4 +1,4 @@
-﻿using CommonActWinform.Interface.IEnumerable;
+﻿using CommonActWinform.Interface.IEnumerableFolder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,5 +32,17 @@ namespace CommonActWinform
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var list = new BookEnum();
+            foreach (var item in list)
+            {
+                Console.WriteLine(item.ToString());
+            }
+
+            
+        }
     }
+
 }

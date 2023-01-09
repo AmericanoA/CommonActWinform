@@ -46,8 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\IEnumerable\Book.cs" />
-    <Compile Include="Interface\IEnumerable\Library.cs" />
+    <Compile Include="Interface\IEnumerableFolder\Book.cs" />
+    <Compile Include="Interface\IEnumerableFolder\BookEnum.cs" />
+    <Compile Include="Interface\IEnumerableFolder\Library.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

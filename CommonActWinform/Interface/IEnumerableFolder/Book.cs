@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonActWinform.Interface.IEnumerable
+namespace CommonActWinform.Interface.IEnumerableFolder
 {
     class Book
     {
